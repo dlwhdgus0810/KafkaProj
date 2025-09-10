@@ -9,12 +9,11 @@ import java.util.Properties;
 
 public class SimpleProducer {
     public static void main(String[] args) {
-
         String topicName = "simple-topic";
 
         // KafkaProducer config setting
-
         Properties props = new Properties();
+
         // bootstrap.servers, key.serializer.class, value.serializer.class
 //        props.setProperty("bootstrap.servers", "192.168.56.101:9092");
         props.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.56.101:9092");
